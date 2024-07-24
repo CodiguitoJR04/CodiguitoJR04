@@ -1,0 +1,85 @@
+/* Reset.css */
+
+/* Elimina margen, padding y box-sizing predeterminado */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Elimina bordes de elementos multimedia */
+img,
+embed,
+object,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Elimina bordes de formularios en navegadores antiguos */
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+
+/* Elimina listas de estilo por defecto */
+ol,
+ul {
+    list-style: none;
+}
+
+/* Elimina decoraciones de enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Elimina el espaciado entre celdas de tablas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Normaliza elementos tipográficos */
+body {
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+/* Resetea tamaños de encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/* Resetea el estilo de citas */
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+    content: none;
+}
+
+/* Resetea el estilo de elementos de formularios */
+button,
+input,
+select,
+textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+}

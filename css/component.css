@@ -1,0 +1,26 @@
+/*Este archivo css es para darle estilos a 
+los componentes como lso botones y de más*/
+
+
+/*  */
+
+:root{
+    --colorCabezera: #1F1F1F;
+    --colorFondoWeb : #313030;
+    --colorLeras: #ffffff;
+    --font-family: "Roboto", sans-serif;
+    --font-weight: 100;
+    --font-style: normal;
+}
+
+.container-header{
+    background-color: var(--colorFondoWeb);
+}
+
+.container-nav-logo{
+    background-color: var(--colorCabezera);
+}
+
+li a {
+    color: var(--colorLeras);
+}
