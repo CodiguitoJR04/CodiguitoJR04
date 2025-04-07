@@ -21,6 +21,17 @@
     height: 100%;
 }
 
+.container-logo img{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 .nav {
     width: 70%;
     height: 100%;

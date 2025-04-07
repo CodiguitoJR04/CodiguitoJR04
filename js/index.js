@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         opacity: 0,
         stagger: 0.5,
         ease: "steps(40)",
-        with: "0%"
+        with: "0"
     }, {
-        with: "100%"
+        with: "100"
     });
 
     ScrollTrigger.create({
@@ -111,13 +111,21 @@ const moverAbajo = () => {
         document.getElementById('proyectos')
     ];
 
-    let currentScroll = window.scrollY;
+    //La solucion fue de que como scrollY a la hora de hacer scroll se reducia el valor de scrollY se le sumo una constante para que Scroll siempre fuera mayor que section y no se quedara en la parte superior de la pagina
+    let currentScroll = window.scrollY + 10;
     let targetSection;
 
+    
+
     for (let i = 0; i < sections.length; i++) {
+        console.log(sections[i].offsetTop);
+        
         if (currentScroll < sections[i].offsetTop) {
+           
             targetSection = sections[i];
             console.log(targetSection.id);
+            console.log("Esta es la altura de ScrollY: "+currentScroll + "Esta es la aultura del scrollY de la seccion: "+ sections[i].offsetTop);
+            
             
              break;
         }
@@ -132,7 +140,7 @@ const moverAbajo = () => {
             },
             duration: 1
         });
-    }else if(document.getElementById('proyectos').scrollY != window.scrollY<=1280 && window.scrollY>640){
+    }else if(document.getElementById('proyectos').scrollY != window.scrollY<=1280 && window.scrollY>833){
         document.getElementById('proyectos').scrollIntoView({behavior:'smooth'})
         let monitor = document.querySelector('.container-monitor');
         let descriptionMonitor = document.querySelector('.container-description');
