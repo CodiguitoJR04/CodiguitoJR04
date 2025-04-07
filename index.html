@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="freelance desarrollo web, desarrollo de aplicaciones, desarrollo de apps, servicios de desarrollo web, programador freelance, desarrollo de software a medida, creación de sitios web, desarrollo de aplicaciones móviles, desarrollo front-end, desarrollo back-end, diseño de aplicaciones, aplicaciones empresariales, soluciones web, programación web, servicios freelance de tecnología, desarrollo full-stack, aplicaciones web, apps personalizadas, servicios de TI, desarrollo de software freelance">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Inicio - WebWizardry</title>
 </head>
 <body>
@@ -21,26 +33,36 @@
                         
                             <ul>
                                 <li><a href="">Inicio</a></li>
-                                <li><a href="">Metodologia</a></li>
-                                <li><a href="">Nosotros</a></li>
-                                <li><a href="">Proyectos</a></li>
+                                <li><a href="#section-metodologia">Metodologia</a></li>
+                                <li><a href="#nosotros">Nosotros</a></li>
+                                <li><a href="#proyectos">Proyectos</a></li>
                             </ul>
                         
+                    </div>
+                    <div class="menu-hamburguesa" onclick="mostrarMenu();">
+                        <div class="subcontainer-menu-hamburguesa">
+                            
+                                <div class="lineas-h"></div>
+                                <div class="lineas-h"></div>
+                                <div class="lineas-h"></div>
+                            
+                        </div>
                     </div>
                 </div>
                 <div class="container-contents">
                     <div class="subcontainer-container-contents">
                         <div class="container-cont-description">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum earum, ut libero nisi numquam debitis nobis beatae dolorum consequuntur magni odit quidem nihil. Facere quisquam tempora provident labore natus?
-                            </p>
-                            <div class="container-icon-scroll">
-                                <img src="" alt="">
+                            <p class="text-header">
+                                En un mundo cada vez más digital, contar con una página web es esencial para conectar con tu audiencia, expandir tu negocio y fortalecer tu presencia en línea. Una página web bien diseñada no solo mejora tu imagen profesional, sino que también te ayuda a alcanzar nuevos clientes y ofrecer tus servicios de manera eficiente.
+
+                            </p><br><p> Nos especializamos en el diseño y desarrollo de sistemas web y aplicaciones móviles a medida, adaptándonos a las necesidades específicas de cada cliente. Nuestro compromiso es brindarte soluciones tecnológicas innovadoras que impulsen tu crecimiento en la era digital.</p>
+                            <div class="container-icon-scroll animate__animated animate__pulse animate__infinite	infinite" onclick="main()">
+                                <img src="assets/img/down-scroll.svg" alt="">
                                 <span>Explorar</span>
                             </div>
                         </div>
                         <div class="container-img-index">
-                            <img src="" alt="">
+                            <img src="assets/img/img-header.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -49,48 +71,216 @@
     </header>
     <main>
         <div class="container-main">
-            <section>
+            <div class="container-flechas-scroll">
+                <div class="subcontainer-flechas-scroll">
+                    <div class="arrow" >
+                        <img onclick="moverArriba()" src="assets/img/flecha-arriba.png" alt="">
+                    </div>
+                    <div class="down" >
+                        <img onclick="moverAbajo()" src="assets/img/flecha-hacia-abajo-para-navegar.png" alt="">
+                    </div>  
+                </div>
+            </div>
+            <section class="metodologia-section" id="section-metodologia">
                 <div class="container-metodologia">
                     <div class="subcontainer-metodologia">
                         <div class="title-section">
                             <h2>Metodologia</h2>
                         </div>
                         <div class="container-items">
-                            <div class="container-item"></div>
-                            <div class="container-item"></div>
-                            <div class="container-item"></div>
-                            <div class="container-item"></div>
+                            <div class="container-tache" id="container-tache" onclick="removeItem();">
+                                <div class="lineas"></div>
+                                <div class="lineas"></div>
+                            </div>
+                            <div class="container-item"  id="container-item" onclick="mostrarItem(0)"><div class="items">
+                                <div class="cont-icon-item">
+                                    <img src="assets/img/idea-icon.png" alt="">
+                                </div>
+                                <div class="cont-description-item">
+                                    <div class="title-item">
+                                        <h2>Idea</h2>
+                                    </div>
+                                    <div class="description">
+                                        <p>Todo comienza con una gran idea. Escuchamos, analizamos y damos forma a tu visión para crear soluciones que marquen la diferencia.</p>
+                                    </div>
+                                    
+                                </div>
+                            </div></div>
+                            <div class="container-item" id="container-item" onclick="mostrarItem(1)" ><div class="items">
+                                <div class="cont-icon-item">
+                                    <img src="assets/img/Iconos.png" alt="">
+                                </div>
+                                <div class="cont-description-item">
+                                    <div class="title-item">
+                                        <h2>Maquetado</h2>
+                                    </div>
+                                    <div class="description">
+                                        <p>Damos vida a tu idea con un diseño visual que refleja tu marca. Creamos una maqueta clara y atractiva, lista para ser desarrollada.</p>
+                                    </div>
+                                    
+                                </div>
+                            </div></div>
+                            <div class="container-item" id="container-item" onclick="mostrarItem(2)"><div class="items">
+                                <div class="cont-icon-item">
+                                    <img src="assets/img/maquetado-icon.png" alt="">
+                                </div>
+                                <div class="cont-description-item">
+                                    <div class="title-item">
+                                        <h2>Desarollo</h2>
+                                    </div>
+                                    <div class="description">
+                                        <p>Transformamos el diseño en realidad. Con código limpio y tecnología moderna, hacemos que tu sitio o app funcione de forma rápida y segur</p>
+                                    </div>
+                                    
+                                </div>
+                            </div></div>
+                            <div class="container-item" id="container-item" onclick="mostrarItem(3)"><div class="items">
+                                <div class="cont-icon-item">
+                                    <img src="assets/img/Iconos-den.png" alt="">
+                                </div>
+                                <div class="cont-description-item">
+                                    <div class="title-item">
+                                        <h2>Testing</h2>
+                                    </div>
+                                    <div class="description">
+                                        <p>Probamos cada detalle para garantizar que todo funcione perfecto. Tu producto estará listo para impactar desde el primer clic.</p>
+                                    </div>
+                                    
+                                </div>
+                            </div></div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="nosotros">
                 <div class="container-nosotros">
+                    <div class="contaner-fondo-section">
+                    </div>
                     <div class="subcontainer-nosotros">
-                        <div class="container-desing">
-                            <div class="container-icon-img">
-                                <div class="container-icon">
-
+                        <div class="title-section">
+                            <h2>Nosotros</h2>
+                        </div>
+                        <div class="container-cards">
+                            <div class="container-card">
+                                <div class="card-inner">
+                                    <div class="container-icon-card">
+                                        <img src="assets/img/IconDiseño-removebg-preview (1).png" alt="">
+                                    </div>
+                                    <div class="container-description-card">
+                                        <div class="container-desing-title">
+                                            <h2>Diseñadora</h2>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="icon"><img src="" alt=""></div><san>Adobe Photoshop</san>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><img src="" alt=""></div><san>Canva</san>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><img src="" alt=""></div><san>Miro</san>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><img src="" alt=""></div><san>Inskape</san>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="container-img">
-
+                                <div class="card-back">
+                                    <div class="container-img-back">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="container-description-back">
+                                        <p>Apasionada por su trabajo y siempre al día con las últimas tendencias, nuestra diseñadora crea con detalle y dedicación. En su tiempo libre, disfruta bailar, lo que inspira su creatividad.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="container-technology-description">
-
+                            <div class="container-card">
+                                <div class="card-inner">
+                                    <div class="container-icon-card">
+                                        <img src="assets/img/IconDesarollador-removebg-preview (1).png" alt="">
+                                    </div>
+                                    <div class="container-description-card">
+                                        <div class="container-desing-title">
+                                            <h2>Desarrolladdor</h2>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="icon"><img src="" alt=""></div><san><i></i>Java</san>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><img src="" alt=""></div><san><i></i>PHP-Laravel</san>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><img src="" alt=""></div><san>JQUERY</san>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><img src="" alt=""></div><san>MySQL</san>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                        <div class="container-img-back">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="container-description-back">
+                                            <p>Amante de la tecnología y en constante aprendizaje, nuestro desarrollador se asegura de usar las mejores prácticas. Fuera del código, su pasión es el deporte, manteniendo un equilibrio entre mente y cuerpo.</p>
+                                        </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="container-developer">
-                            <div class="container-icon-img">
-                                <div class="container-icon">
-
+                    </div>
+                </div>
+            </section>
+            <section id="proyectos">
+                <div class="container-proyects">
+                    <div class="subcontainer-proyectos">
+                        <div class="title-section">
+                            <h2>Proyectos</h2>
+                        </div>
+                        <div class="container-monitor animate__animated">
+                            <img src="assets/img/monitor-proyects.svg" alt="">
+                            <div class="container-slider">
+                                <div class="subcontainer-sliders">
+                                <div class="container-gif">
+                                    <div class="gif">
+                                        <img class="gif-slide animate__animated" src="assets/video/WebWizardry.gif" alt="">
+                                    </div>
+                                    <div class="gif">
+                                        <img class="gif-slide animate__animated" src="assets/video/creativa-it.gif" alt="">
+                                    </div>
+                                    <div class="gif">
+                                        <img class="gif-slide animate__animated" src="assets/video/imper-hous.gif" alt="">
+                                    </div>
+                                    <!-- <div class="gif">
+                                        <img class="gif-slide animate__animated" src="https://www.bing.com/th/id/OGC.32143efcd1f845b8a23c49f5060b0444?pid=1.7&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fd6headfbRvPkA%2fgiphy.gif&ehk=yiNTla7qS63kxBeE%2fNWczOkmmb0lYTYwDG6jPTMGaq4%3d" alt="">
+                                    </div> -->
                                 </div>
-                                <div class="container-img">
+                                <div class="container-description animate__animated">
+                                    <div class="text-description">
+                                        <h2 style="text-align: center;">Web Wizardry</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestiae soluta et ipsam nemo vitae ipsum eveniet provident quis eum, totam, voluptas corporis ducimus, recusandae qui quod dolorum quo? Aliquid!</p>
+                                    </div>
+                                    <div class="text-description">
+                                        <h2 style="text-align: center;">Creativa It</h2>
 
+                                        <p>Lorem ipsum dolores sit amet, consectetur adipisicing elit. Nobis molestiae soluta et ipsam nemo vitae ipsum eveniet provident quis eum, totam, voluptas corporis ducimus, recusandae qui quod dolorum quo? Aliquid!</p>
+                                    </div>
+                                    <div class="text-description">
+                                        <h2 style="text-align: center;">Imper House</h2>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestiae soluta et ipsam nemo vitae ipsum eveniet provident quis eum, totam, voluptas corporis ducimus, recusandae qui quod dolorum quo? Aliquid!</p>
+                                    </div>
+                                    <!-- <div class="text-description">
+                                        <h2 style="text-align: center;">Tercer</h2>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestiae soluta et ipsam nemo vitae ipsum eveniet provident quis eum, totam, voluptas corporis ducimus, recusandae qui quod dolorum quo? Aliquid!</p>
+                                    </div> -->
+                                <a  class="btn btn-primary btn-arrow" onclick="sliderArriba()"><img src="assets/img/flecha-arriba-p.png" alt=""></a>
+                                <a  class="btn btn-primary btn-down" onclick="sliderAbajo()"><img src="assets/img/flecha-abajo-p.png" alt=""></a>
                                 </div>
                             </div>
-                            <div class="container-technology-description">
-                                
                             </div>
                         </div>
                     </div>
@@ -98,5 +288,32 @@
             </section>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/PixiPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+
+<!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
+
+<!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
 </body>
 </html>

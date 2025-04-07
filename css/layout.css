@@ -69,9 +69,329 @@ li a{
     flex-direction: column;
 }
 
+.container-icon-scroll{
+    width: 15%;
+    height: 15%;
+}
+
+span{
+    text-align: center;
+    padding: 0px 0px 0px 10px;
+}
+
+.container-icon-scroll img{
+    width: 52.3px;
+    height: 52.3x;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 
 .container-img-index{
     width: 45%;
     height: 100%;
+    position: relative;
+}
+
+
+.container-img-index img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    image-rendering: optimizeQuality;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+.container-main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container-metodologia{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.subcontainer-metodologia{
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.title-section{
+    width: 100%;
+    height: 10%;
+}
+
+.container-items{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+
+.container-item{
+    width: 45%;
+    height: 45%;
+}
+
+.container-nosotros{
+    width: 100%;
+    height: 100vh;
+}
+
+.subcontainer-nosotros{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.container-cards{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.card-inner , .card-back{
+    width: 80%;
+    height: auto;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-proyects{
+    width: 100%;
+    height: 100vh;
+}
+
+.subcontainer-proyectos{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.container-monitor{
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+
+.container-monitor img{
+    width: 75%;
+    height: 100%;
+    position: relative;
+}
+
+.container-slider{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.subcontainer-sliders{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.container-gif{
+    width: 75%;
+    height: 90%;
+    position: absolute;
+    z-index: 1;
+}
+
+.container-gif .gif > img{
+    width: 80%;
+    height: 75%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.gif img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.container-description{
+    position: absolute;
+    width: 35%;
+    height: 70%;
+    z-index: 2;
+    margin-left: 65%;
+    justify-content: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.text-description{
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Empieza el layout para celulares y tablets */
+@media screen  and (max-width: 700px) {
+    body{
+        overflow: visible;
+    }
+    .nav{
+        width: 100%;
+        height: 100vh;
+        display: none;
+    }   
+
+    .nav ul{
+        flex-direction: column;
+        display: none;
+    }   
+
+    .container-nav-log{
+        width: 100%;
+        height: 5%;
+    }
+
+    .menu-hamburguesa{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        /* background-color: aqua; */
+        margin: auto;
+        margin-right: 20px;
+        border-radius: 49%;
+    }
+
+    .subcontainer-menu-hamburguesa{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .subcontainer-menu-hamburguesa .lineas-h{
+        width: 90%;
+        height: 1px;
+        margin: 3px;
+        background-color: aliceblue;
+    }
+    
+    .mostrar-nav{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subcontainer-container-contents{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-cont-description{
+        width: 100%;
+        height: 50%;
+    }
+
+    .text-header {
+        font-size: 10px;
+    }
+
+    .container-cont-description p {
+        font-size: 10.3px;
+    }
+
+    .container-img-index{
+        width: 100%;
+        height: 50%;
+    }
+
+    .container-icon-scroll{
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span{
+        padding: 0;
+        font-size: 10px;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .container-img-index img{
+        height: 68%;
+    }
+
+
+    
 }
