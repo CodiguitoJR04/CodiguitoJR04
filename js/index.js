@@ -140,7 +140,11 @@ const moverAbajo = () => {
             },
             duration: 1
         });
-    }else if(document.getElementById('proyectos').scrollY != window.scrollY<=1280 && window.scrollY>833){
+    }else if(document.getElementById('proyectos').scrollY != window.scrollY && window.scrollY>833){
+        console.log(document.getElementById('proyectos').scrollY);
+        
+        console.log("Este es el scroll de la seccion de los proyectos "+ document.getElementById('proyectos').scrollY + " Este es el scroll de la ventana de windows: "+window.scrollY);
+        
         document.getElementById('proyectos').scrollIntoView({behavior:'smooth'})
         let monitor = document.querySelector('.container-monitor');
         let descriptionMonitor = document.querySelector('.container-description');
@@ -223,3 +227,22 @@ const removeItem = () =>{
     }
     tache.style.display = "none"
 }
+
+
+// Menú hamburguesa
+const menuHamburguesa = document.querySelector('.menu-hamburguesa');
+const nav = document.querySelector('.nav');
+
+function mostrarMenu() {
+    nav.classList.toggle('active');
+    menuHamburguesa.classList.toggle('active');
+}
+
+// Cerrar menú al hacer clic en un enlace
+const navLinks = document.querySelectorAll('.nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        menuHamburguesa.classList.remove('active');
+    });
+});

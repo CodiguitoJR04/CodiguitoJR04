@@ -305,105 +305,50 @@ main{
 }
 
 /* Empieza el layout para celulares y tablets */
-@media screen  and (max-width: 700px) {
+@media screen  and (max-width: 800px) {
     body{
         overflow: visible;
     }
-    .nav{
-        width: 100%;
-        height: 100vh;
-        display: none;
-    }   
 
-    .nav ul{
-        flex-direction: column;
-        display: none;
-    }   
+    /* Vamos a optimizar el nav para el navegador*/
 
-    .container-nav-log{
-        width: 100%;
-        height: 5%;
+
+    .nav ul {
+        justify-content: none;
+        justify-items: center;
+        padding: 5px;
+        margin: 0px;
     }
 
-    .menu-hamburguesa{
-        display: flex;
-        width: 40px;
-        height: 40px;
-        /* background-color: aqua; */
-        margin: auto;
-        margin-right: 20px;
-        border-radius: 49%;
-    }
-
-    .subcontainer-menu-hamburguesa{
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        /* justify-content: space-between; */
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .subcontainer-menu-hamburguesa .lineas-h{
-        width: 90%;
-        height: 1px;
-        margin: 3px;
-        background-color: aliceblue;
-    }
-    
-    .mostrar-nav{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
+    ul li a {
+        font-size: 12.5px;
     }
 
     .subcontainer-container-contents{
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-
-    .container-cont-description{
-        width: 100%;
-        height: 50%;
-    }
-
-    .text-header {
-        font-size: 10px;
+        width: 80%;
+        height: 80%;
     }
 
     .container-cont-description p {
-        font-size: 10.3px;
+        font-size: 11.8px;
     }
 
-    .container-img-index{
-        width: 100%;
-        height: 50%;
+    .container-icon-scroll img{
+        width: 35px;
+        height: 30px;
+        margin: 5px;
     }
-
-    .container-icon-scroll{
-        width: 20px;
-        height: 20px;
+    .container-icon-scroll span{
         text-align: center;
-        align-items: center;
-        justify-content: center;
+        font-size: 11.8px;
+        padding: 0px;
+        margin: 5px -5px 0px 0px;
     }
-
-    span{
-        padding: 0;
-        font-size: 10px;
-        margin: 0px;
-        justify-content: center;
-        align-items: center;
-        display: none;
-    }
-
-    .container-img-index img{
-        height: 68%;
-    }
-
+    
+    /* Arreglando el boton de felchas */
 
     
+
+
 }
+

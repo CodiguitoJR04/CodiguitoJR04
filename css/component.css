@@ -166,3 +166,20 @@ section {
               transform: translateY(-100px);
     }
   }
+
+  /* Arreglando el boton para tables */
+
+  @media screen and (max-width: 800px) {
+        .container-flechas-scroll{
+            width: 65px;
+            height: 65px;
+            justify-content: space-around;
+            /* transform: translateY(-30%); */
+            margin: 0px;
+        }
+
+        .arrow , .down{
+            width: 25px;
+            height: 25px;
+        }
+  }
