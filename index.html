@@ -20,273 +20,27 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <title>Inicio - WebWizardry</title>
+  <script src="https://kit.fontawesome.com/2e17ce8de6.js" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<title>Inicio - WebWizardry</title>
 </head>
 <body>
-    <header>
-        <div class="container-header">
-            <div class="subcontainer-header">
-                <div class="container-nav-logo">
-                    <div class="container-logo">
-                        <img src="/assets/img/448144284_122100477788353980_4391137494266497881_n.jpg" alt="">
-                    </div>
-                    <div class="nav">
-                        
-                            <ul>
-                                <li><a href="">Inicio</a></li>
-                                <li><a href="#section-metodologia">Metodologia</a></li>
-                                <li><a href="#nosotros">Nosotros</a></li>
-                                <li><a href="#proyectos">Proyectos</a></li>
-                            </ul>
-                        
-                    </div>
-                    <div class="menu-hamburguesa" onclick="mostrarMenu();">
-                        <div class="subcontainer-menu-hamburguesa">
-                            
-                                <div class="lineas-h"></div>
-                                <div class="lineas-h"></div>
-                                <div class="lineas-h"></div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="container-contents">
-                    <div class="subcontainer-container-contents">
-                        <div class="container-cont-description">
-                            <p class="text-header">
-                                En un mundo cada vez más digital, contar con una página web es esencial para conectar con tu audiencia, expandir tu negocio y fortalecer tu presencia en línea. Una página web bien diseñada no solo mejora tu imagen profesional, sino que también te ayuda a alcanzar nuevos clientes y ofrecer tus servicios de manera eficiente.
-
-                            </p><br><p> Nos especializamos en el diseño y desarrollo de sistemas web y aplicaciones móviles a medida, adaptándonos a las necesidades específicas de cada cliente. Nuestro compromiso es brindarte soluciones tecnológicas innovadoras que impulsen tu crecimiento en la era digital.</p>
-                            <div class="container-icon-scroll animate__animated animate__pulse animate__infinite	infinite" onclick="main()">
-                                <img src="assets/img/down-scroll.svg" alt="">
-                                <span>Explorar</span>
-                            </div>
-                        </div>
-                        <div class="container-img-index">
-                            <img src="assets/img/img-header.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
     <main>
-        <div class="container-main">
-            <div class="container-flechas-scroll">
-                <div class="subcontainer-flechas-scroll">
-                    <div class="arrow" >
-                        <img onclick="moverArriba()" src="assets/img/flecha-arriba.png" alt="">
-                    </div>
-                    <div class="down" >
-                        <img onclick="moverAbajo()" src="assets/img/flecha-hacia-abajo-para-navegar.png" alt="">
-                    </div>  
-                </div>
+        
+        <div class="container-cont">
+          <div class="icon">
+            <img src="assets/img/icono.ico" alt="">
+            <h1>Web Wizardry</h1>
+          </div>  
+        <dotlottie-player src="https://lottie.host/e43b8753-bac7-4dd4-afde-f23ac27067da/COn8Z8DCCU.lottie" background="transparent" speed="1" style="width: 500px; height: 500px" loop autoplay></dotlottie-player>
+            <h2>Nos estamos renovando</h2>
+            <div class="container-links">
+                <!-- Facebook -->
+                 <a class="iconos-contac" href="https://www.facebook.com/profile.php?id=61561012941380"><i class="fa-brands fa-facebook"></i><span>Web Wizardry</span></a>
+                 <a class="iconos-contac" href="https://www.instagram.com/webwizardry18/?utm_source=ig_web_button_share_sheet"><i class="fa-brands fa-instagram"></i><span>webwizardry18</span></a>
+                 <a href="" data-phone="5637492957" class="iconos-contac"></a>
             </div>
-            <section class="metodologia-section" id="section-metodologia">
-                <div class="container-metodologia">
-                    <div class="subcontainer-metodologia">
-                        <div class="title-section">
-                            <h2>Metodologia</h2>
-                        </div>
-                        <div class="container-items">
-                            <div class="container-tache" id="container-tache" onclick="removeItem();">
-                                <div class="lineas"></div>
-                                <div class="lineas"></div>
-                            </div>
-                            <div class="container-item"  id="container-item" onclick="mostrarItem(0)"><div class="items">
-                                <div class="cont-icon-item">
-                                    <img src="assets/img/idea-icon.png" alt="">
-                                </div>
-                                <div class="cont-description-item">
-                                    <div class="title-item">
-                                        <h2>Idea</h2>
-                                    </div>
-                                    <div class="description">
-                                        <p>Todo comienza con una gran idea. Escuchamos, analizamos y damos forma a tu visión para crear soluciones que marquen la diferencia.</p>
-                                    </div>
-                                    
-                                </div>
-                            </div></div>
-                            <div class="container-item" id="container-item" onclick="mostrarItem(1)" ><div class="items">
-                                <div class="cont-icon-item">
-                                    <img src="assets/img/Iconos.png" alt="">
-                                </div>
-                                <div class="cont-description-item">
-                                    <div class="title-item">
-                                        <h2>Maquetado</h2>
-                                    </div>
-                                    <div class="description">
-                                        <p>Damos vida a tu idea con un diseño visual que refleja tu marca. Creamos una maqueta clara y atractiva, lista para ser desarrollada.</p>
-                                    </div>
-                                    
-                                </div>
-                            </div></div>
-                            <div class="container-item" id="container-item" onclick="mostrarItem(2)"><div class="items">
-                                <div class="cont-icon-item">
-                                    <img src="assets/img/maquetado-icon.png" alt="">
-                                </div>
-                                <div class="cont-description-item">
-                                    <div class="title-item">
-                                        <h2>Desarollo</h2>
-                                    </div>
-                                    <div class="description">
-                                        <p>Transformamos el diseño en realidad. Con código limpio y tecnología moderna, hacemos que tu sitio o app funcione de forma rápida y segur</p>
-                                    </div>
-                                    
-                                </div>
-                            </div></div>
-                            <div class="container-item" id="container-item" onclick="mostrarItem(3)"><div class="items">
-                                <div class="cont-icon-item">
-                                    <img src="assets/img/Iconos-den.png" alt="">
-                                </div>
-                                <div class="cont-description-item">
-                                    <div class="title-item">
-                                        <h2>Testing</h2>
-                                    </div>
-                                    <div class="description">
-                                        <p>Probamos cada detalle para garantizar que todo funcione perfecto. Tu producto estará listo para impactar desde el primer clic.</p>
-                                    </div>
-                                    
-                                </div>
-                            </div></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="nosotros">
-                <div class="container-nosotros">
-                    <div class="contaner-fondo-section">
-                    </div>
-                    <div class="subcontainer-nosotros">
-                        <div class="title-section">
-                            <h2>Nosotros</h2>
-                        </div>
-                        <div class="container-cards">
-                            <div class="container-card">
-                                <div class="card-inner">
-                                    <div class="container-icon-card">
-                                        <img src="assets/img/IconDiseño-removebg-preview (1).png" alt="">
-                                    </div>
-                                    <div class="container-description-card">
-                                        <div class="container-desing-title">
-                                            <h2>Diseñadora</h2>
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                <div class="icon"><img src="" alt=""></div><san>Adobe Photoshop</san>
-                                            </li>
-                                            <li>
-                                                <div class="icon"><img src="" alt=""></div><san>Canva</san>
-                                            </li>
-                                            <li>
-                                                <div class="icon"><img src="" alt=""></div><san>Miro</san>
-                                            </li>
-                                            <li>
-                                                <div class="icon"><img src="" alt=""></div><san>Inskape</san>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-back">
-                                    <div class="container-img-back">
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="container-description-back">
-                                        <p>Apasionada por su trabajo y siempre al día con las últimas tendencias, nuestra diseñadora crea con detalle y dedicación. En su tiempo libre, disfruta bailar, lo que inspira su creatividad.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-card">
-                                <div class="card-inner">
-                                    <div class="container-icon-card">
-                                        <img src="assets/img/IconDesarollador-removebg-preview (1).png" alt="">
-                                    </div>
-                                    <div class="container-description-card">
-                                        <div class="container-desing-title">
-                                            <h2>Desarrolladdor</h2>
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                <div class="icon"><img src="" alt=""></div><san><i></i>Java</san>
-                                            </li>
-                                            <li>
-                                                <div class="icon"><img src="" alt=""></div><san><i></i>PHP-Laravel</san>
-                                            </li>
-                                            <li>
-                                                <div class="icon"><img src="" alt=""></div><san>JQUERY</san>
-                                            </li>
-                                            <li>
-                                                <div class="icon"><img src="" alt=""></div><san>MySQL</san>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-back">
-                                        <div class="container-img-back">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="container-description-back">
-                                            <p>Amante de la tecnología y en constante aprendizaje, nuestro desarrollador se asegura de usar las mejores prácticas. Fuera del código, su pasión es el deporte, manteniendo un equilibrio entre mente y cuerpo.</p>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="proyectos">
-                <div class="container-proyects">
-                    <div class="subcontainer-proyectos">
-                        <div class="title-section">
-                            <h2>Proyectos</h2>
-                        </div>
-                        <div class="container-monitor animate__animated">
-                            <img src="assets/img/monitor-proyects.svg" alt="">
-                            <div class="container-slider">
-                                <div class="subcontainer-sliders">
-                                <div class="container-gif">
-                                    <div class="gif">
-                                        <img class="gif-slide animate__animated" src="assets/video/WebWizardry.gif" alt="">
-                                    </div>
-                                    <div class="gif">
-                                        <img class="gif-slide animate__animated" src="assets/video/creativa-it.gif" alt="">
-                                    </div>
-                                    <div class="gif">
-                                        <img class="gif-slide animate__animated" src="assets/video/imper-hous.gif" alt="">
-                                    </div>
-                                    <!-- <div class="gif">
-                                        <img class="gif-slide animate__animated" src="https://www.bing.com/th/id/OGC.32143efcd1f845b8a23c49f5060b0444?pid=1.7&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fd6headfbRvPkA%2fgiphy.gif&ehk=yiNTla7qS63kxBeE%2fNWczOkmmb0lYTYwDG6jPTMGaq4%3d" alt="">
-                                    </div> -->
-                                </div>
-                                <div class="container-description animate__animated">
-                                    <div class="text-description">
-                                        <h2 style="text-align: center;">Web Wizardry</h2>
-                                        <p>Diseño y desarrollo web a medida para marcas que quieren destacar. Creo sitios rápidos, visuales y funcionales, optimizados para SEO y conversiones. Desde landing pages hasta plataformas complejas, tu proyecto cobrará vida con tecnología moderna y un enfoque creativo. ¡Hagamos que tu presencia digital sea imparable</p>
-                                    </div>
-                                    <div class="text-description">
-                                        <h2 style="text-align: center;">Creativa It</h2>
-
-                                        <p>Desarrollé la web de este estudio de apps móviles, creando una plataforma que muestra su portafolio y atrae clientes. Con diseño responsive, integración de proyectos y estructura SEO, potencié su presencia online como especialistas en desarrollo Android</p>
-                                    </div>
-                                    <div class="text-description">
-                                        <h2 style="text-align: center;">Imper House</h2>
-
-                                        <p>Para esta empresa de impermeabilización, construí un sitio web claro y persuasivo que destaca sus servicios, materiales y casos de éxito. Diseño intuitivo, carga rápida y formularios estratégicos para generar leads calificados en el sector construcción</p>
-                                    </div>
-                                    <!-- <div class="text-description">
-                                        <h2 style="text-align: center;">Tercer</h2>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestiae soluta et ipsam nemo vitae ipsum eveniet provident quis eum, totam, voluptas corporis ducimus, recusandae qui quod dolorum quo? Aliquid!</p>
-                                    </div> -->
-                                <a  class="btn btn-primary btn-arrow" onclick="sliderArriba()"><img src="assets/img/flecha-arriba-p.png" alt=""></a>
-                                <a  class="btn btn-primary btn-down" onclick="sliderAbajo()"><img src="assets/img/flecha-abajo-p.png" alt=""></a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -308,6 +62,8 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/PixiPlugin.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
 
 
 <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
